@@ -1,7 +1,6 @@
 snippet php
 	<?php
 	${1}
-	?>
 snippet phpil
 	<?php ${1} ?>
 snippet ec
@@ -143,11 +142,9 @@ snippet class
 	/**
 	 * ${1}
 	 */
-	class ${2:ClassName}
-	{
+	class ${2:ClassName} {
 		${3}
-		function ${4:__construct}(${5:argument})
-		{
+		function ${4:__construct}(${5:argument}) {
 			${6:// code...}
 		}
 	}
@@ -215,8 +212,7 @@ snippet foreachk
 		${4:// code...}
 	}
 snippet fun
-	${1:public }function ${2:FunctionName}(${3})
-	{
+	${1:public }function ${2:FunctionName}(${3}) {
 		${4:// code...}
 	}
 # $... = array (...)
@@ -245,3 +241,14 @@ snippet http_redirect
 	header ("HTTP/1.1 301 Moved Permanently"); 
 	header ("Location: ".URL); 
 	exit();
+
+snippet kv
+	'${1:key}' => ${2:value},
+# array item. String value
+snippet kvs
+	'${1:key}' => '${2:value}',
+snippet var
+	$${1:var} = ${2:value};
+# one line php
+snippet phpl
+	<?php ${1} ?>
